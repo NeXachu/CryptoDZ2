@@ -4,7 +4,7 @@
 
 This programm uses RSA sign and verify functions from openssl library to emulate work of car's trinket.
 
-<h2>How to build and run<h2>
+<h2>How to build and run</h2>
 
 git clone https://github.com/NeXachu/CryptoDZ2.git
 
