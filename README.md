@@ -4,6 +4,19 @@
 
 This programm uses RSA sign and verify functions from openssl library to emulate work of car's trinket.
 
+<h2>Algorithm</h2>
+
+Let's assume that public key is hardcoded to the car at the dealership.
+
+ Step's to open the car:
+ * trinket broadcasts his public key
+ * car listens to the broadcast and check if public key is in it's internal list of keys
+ * if check successful car challenge the trinket
+ * trinket responds with signed challenge
+ * car verify and open the door
+ 
+ Since challenge generated randomly each time, simple copying trinket messages won't open the car.
+
 <h2>How to build and run</h2>
 
 git clone https://github.com/NeXachu/CryptoDZ2.git
